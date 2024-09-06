@@ -1,0 +1,69 @@
+.container {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.text {
+  font-family: sans-serif;
+  text-align: center;
+  font-weight: bold;
+  font-size: x-large;
+}
+
+.gif-embed {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px; /* Space between GIF and buttons */
+  position: relative;
+}
+
+.gif-embed img {
+  max-width: 100%;
+  height: auto;
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative; /* Ensure the buttons are positioned relative to this container */
+  gap: 20px; /* Space between the buttons */
+}
+
+.no-button,
+.yes-button,
+.again-button {
+  padding: 10px 20px;
+  font-size: 18px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.no-button {
+  background-color: red;
+  position: absolute; /* Allow the NO button to move around */
+}
+
+.yes-button {
+  background-color: #4caf50;
+}
+.again-button {
+  background-color: brown;
+}
+.no-button:hover {
+  cursor: not-allowed;
+  transform: translateX(50px); /* Adjust to move the button away */
+}
